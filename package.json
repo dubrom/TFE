@@ -1,0 +1,22 @@
+{
+  "name": "pg-sync-server",
+  "version": "1.0.0",
+  "description": "bring auto-refresh to ios PG thanks to websockets",
+  "main": "sync.js",
+  "dependencies": {
+    "ws": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "playground",
+    "ios",
+    "html",
+    "javascript",
+    "websockets"
+  ],
+  "author": "boblemarin",
+  "license": "ISC"
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="_css/main.css" media="all" />
+</head>
+<body>
+	
+	<canvas id="left-hand" class="canvas"></canvas>
+	<canvas id="right-hand" class="canvas"></canvas>
+	<canvas id="waves" class="canvas"></canvas>
+
+
+	<script src="_js/lib/jquery.min.js"></script>
+
+	<!-- <script src="_js/lib/three.min.js"></script>
+	<script src="_js/lib/OrbitControls.js"></script>
+	<script src="_js/lib/Detector.js"></script> -->
+
+	<script src="_js/lib/leap-0.6.4.min.js"></script>
+	<script src="_js/lib/tone.min.js"></script>
+
+	<script src="_js/main.js"></script>
+
+	<script type="text/javascript">
+		var socketState = 0;
+		var socket = new WebSocket("ws://localhost:4000");
+
+		socket.onopen = function() {
+			socketState = 1;
+			console.log("Socket State : " + socketState)
+		}
+		socket.onclose = function() {
+			socketState = 0;
+			console.log("Socket State : " + socketState)
+		}
+		socket.onerror = function() {
+			socketState = 0;
+			console.log("Socket State : " + socketState)
+		}
+
+		function sendData(d) {
+			if (socket.readyState == 1) {
+				socket.send(JSON.stringify(d));
+			}
+		}
+
+		socket.onmessage = function(str) {
+			datasToUse = JSON.parse(str.data);
+		}
+
+
+
+
+	</script>
+</body>
+</html>

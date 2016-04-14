@@ -1,0 +1,108 @@
+/* line 1, ../_sass/_fonts.scss */
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../_sass/_fonts.scss */
+ul {
+  list-style: none;
+}
+
+/* line 10, ../_sass/_fonts.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../_sass/_reset.scss */
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../_sass/_reset.scss */
+ul {
+  list-style: none;
+}
+
+/* line 10, ../_sass/_reset.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 6, ../_sass/main.scss */
+html, body, canvas {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 14, ../_sass/main.scss */
+.canvas {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 21, ../_sass/main.scss */
+.canvas#left-hand {
+  width: 12.5%;
+  background: #000000;
+}
+/* line 25, ../_sass/main.scss */
+.canvas#right-hand {
+  width: 87.5%;
+  left: 12.5%;
+  background: #000000;
+}
+/* line 30, ../_sass/main.scss */
+.canvas#waves {
+  width: 87.5%;
+  left: 12.5%;
+  background: transparent;
+  z-index: 10;
+}
+
+/* line 38, ../_sass/main.scss */
+.container {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+/* line 44, ../_sass/main.scss */
+.container .position {
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+/* line 58, ../_sass/main.scss */
+.container .hand {
+  width: 100%;
+  height: 100%;
+}
+/* line 62, ../_sass/main.scss */
+.container .hand .finger {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  background: #fff;
+  position: absolute;
+}
+/* line 71, ../_sass/main.scss */
+.container .line {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  top: 88.8888%;
+  left: 0;
+}
